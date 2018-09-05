@@ -1,0 +1,29 @@
+body {
+	min-width: 1672px;
+	padding: 0;
+	margin: 0;
+	background-color: #f3f3f3;
+	color: #0d3351;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.page-header {
+	height: 648px;
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
