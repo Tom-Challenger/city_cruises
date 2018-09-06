@@ -28,21 +28,26 @@ a {
 
 .page-header {
 	height: 648px;
+	margin-bottom: 120px;
 	background-image: url("../img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 
 .header-top {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	padding-top: 40px;
 }
 
 .header-top .heater-top-item {
-	float: right;
+	//float: right;
 }
 
 .header-top .heater-top-item:first-child {
-	float: left;
+	//float: left;
+	flex: 1;
 }
 
 .header-top .heater-top-item .btn-menu {
@@ -129,6 +134,7 @@ a {
 	display: inline-block;
 	width: 58px;
 	height: 281px;
+	margin-top: 20px;
 	background-color: gray;
 	background-image: url("../img/line-dashed.png");
 	background-repeat: no-repeat;
