@@ -6,6 +6,11 @@ body {
 	color: #0d3351;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 .container {
 	width: 1170px;
 	margin: 0 auto;
@@ -27,3 +32,106 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 }
+
+.header-top {
+	padding-top: 40px;
+}
+
+.header-top .heater-top-item {
+	float: right;
+}
+
+.header-top .heater-top-item:first-child {
+	float: left;
+}
+
+.header-top .heater-top-item .btn-menu {
+	display: block;
+	width: 22px;
+	height: 16px;
+	background-color: black;
+}
+
+.header-top .heater-top-item .profile,
+.header-top .heater-top-item .currency,
+.header-top .heater-top-item .language {
+	display: block;
+	margin-right: 30px;
+}
+
+.icon {
+	display: inline-block;
+	width: 10px;
+	height: 12px;
+	background-color: black;
+}
+
+.title {
+	display: inline-block;
+}
+
+.arrow {
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	background-color: black;
+}
+
+.promo {
+	text-align: center;
+}
+
+.promo img {
+	display: inline-block;
+	width: 88px;
+	height: 88px;
+}
+
+.promo-line-1 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 36px;
+	line-height: normal;/*48px;*/
+	letter-spacing: 2px;
+	color: #0d3351;
+	text-transform: none;
+}
+
+.promo-line-2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100px;
+	line-height: normal;/*48px;*/
+	letter-spacing: 5px;
+	color: #0d3351;
+	text-transform: uppercase;
+}
+
+.promo a {
+	display: inline-block;
+	width: 202px;
+	height: 47px;
+	background-color: rgb(51, 199, 253);
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 48px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: none;
+}
+
+.line-dashed {
+	display: inline-block;
+	width: 58px;
+	height: 281px;
+	background-color: gray;
+	background-image: url("../img/line-dashed.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
