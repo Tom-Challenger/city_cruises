@@ -14,23 +14,16 @@
 	<body>
 		<header class=page-header>
 			<div class="container">
-				<div class="header-top clearfix">
+				<div class="header-top">
 					<div class="heater-top-item">
 						<a class="btn-menu" href="#" title="Открыть меню">
 							<img src="img/menu-icon.png" alt="Menu" width="22" height="16">
 						</a>
 					</div>
 					<div class="heater-top-item">
-						<div class="contacts">
-							<b>8 800 500-61-05</b>
-							<br>
-							<span class="">Круглосуточная поддержка</span>
-						</div>
-					</div>
-					<div class="heater-top-item">
-						<a class="language" href="#" title="Указать язык">
+						<a class="profile" href="#" title="Войти в личный кабинет">
 							<span class="icon"></span><!--::before-->
-							<span class="title">Ru</span>
+							<span class="title">Личный кабинет</span>
 							<span class="arrow"></span><!--::after-->
 						</a>
 					</div>
@@ -42,11 +35,18 @@
 						</a>
 					</div>
 					<div class="heater-top-item">
-						<a class="profile" href="#" title="Войти в личный кабинет">
+						<a class="language" href="#" title="Указать язык">
 							<span class="icon"></span><!--::before-->
-							<span class="title">Личный кабинет</span>
+							<span class="title">Ru</span>
 							<span class="arrow"></span><!--::after-->
 						</a>
+					</div>
+					<div class="heater-top-item">
+						<div class="contacts">
+							<b>8 800 500-61-05</b>
+							<br>
+							<span class="">Круглосуточная поддержка</span>
+						</div>
 					</div>
 				</div>
 				
@@ -57,7 +57,7 @@
 						<br>
 						<span class="promo-line-2">по Черному морю</span>
 					</h1>
-					<a class="btn to-all-cruise" href="#cruises" title="Перейти к каталогу">Выбрать круиз</a>
+					<a class="btn to-all-cruise" href="#catalog-of-cruises" title="Перейти к каталогу">Выбрать круиз</a>
 					<br>
 					<div class="line-dashed">
 						<!--CSS рисование пунктирной линии-->
@@ -68,15 +68,31 @@
 		</header>
 		
 		
-		<main class="cruises" id="cruises">
+		<main name="catalog-of-cruises">
 			<div class="container">
-				<h2>Каталог круизов</h2>
-				<p>Сортировать круизы по <a><i>цене:</i><span class="arrow"></span></a></p>
-				
-				<ul class="cruise-list clearfix">
+				<div class="content-header">
+					<h2 class="title">Каталог круизов</h2>
+					<p class="sub-title">Сортировать круизы по <a><i>цене:</i><span class="arrow"></span></a></p>
+				</div>
+				<ul class="content-main cruise-list clearfix">
 					<li class="catalog-item">
-						<img src="" alt="" width="" height="">
-						<a href="#"><h3>Морской круиз в Анапу</h3><span class="arrow"></span></a>
+						<img src="img/item-1.jpg" alt="" width="555" height="436">
+						<div class="summary">
+							<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+							<p>
+								<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
+								<br>
+								<b>Продолжительность:</b> 10 ч. 0 мин.
+								<br>
+								<b class="catalog-item-price">49 000 руб.</b>
+							</p>
+						</div>
+					</li>
+					
+					
+					<li class="catalog-item">
+						<img src="img/item-1.jpg" alt="" width="555" height="436">
+						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
 						<p>
 							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
 							<br>
@@ -86,8 +102,19 @@
 						</p>
 					</li>
 					<li class="catalog-item">
-						<img src="" alt="" width="" height="">
-						<a href="#"><h3>Морской круиз в Анапу</h3><span class="arrow"></span></a>
+						<img src="img/item-1.jpg" alt="" width="555" height="436">
+						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+						<p>
+							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
+							<br>
+							<b>Продолжительность:</b> 10 ч. 0 мин.
+							<br>
+							<b class="catalog-item-price">49 000 руб.</b>
+						</p>
+					</li>
+					<li class="catalog-item">
+						<img src="img/item-1.jpg" alt="" width="555" height="436">
+						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
 						<p>
 							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
 							<br>
@@ -98,8 +125,8 @@
 					</li>
 				</ul>
 				
-				<div>
-					<a></a>
+				<div class="content-footer">
+					<a class="btn view-more" href="#">Больше круизов<span class="arrow"></span></a>
 				</div>
 			</div>
 		</main>
@@ -107,7 +134,7 @@
 		
 		<footer class="page-footer">
 			<div class="container">
-				<div class="footer clearfix">
+				<div class="footer">
 					<div class="footer-menu">
 						<ul>
 							<li><a href="#">Вход для партнеров</a></li>
@@ -116,16 +143,17 @@
 						</ul>
 					</div>
 					<div class="footer-social">
-						<span>Будь на связи:</span>
+						<span class="title">Будь на связи:</span>
 						<a class="social-btn social-btn-vk" href="https://vk.com"></a>
-						<a class="social-btn social-btn-fb" href="https://facebook.com"></a>
+						<a class="social-btn social-btn-ok" href="https://facebook.com"></a>
+						<a class="social-btn social-btn-ut" href="https://facebook.com"></a>
 						<a class="social-btn social-btn-in" href="https://instagram.com"></a>
 					</div>
 					<div class="footer-contacts">
 						<div class="contacts">
 							<b>8 800 500-61-05</b>
 							<br>
-							<span class="">Круглосуточная поддержка</span>
+							<span>Круглосуточная поддержка</span>
 						</div>
 						<div class="footer-copyright">
 							© 2016 ООО &laquoГородские Круизы&raquo
