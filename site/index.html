@@ -6,64 +6,70 @@
 		<title>ООО &laquoГородские Круизы&raquo</title>
 		<!--Контроль размера и маштаба страницы на мобильном устройстве-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 		<!--External fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		<!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/raleway-cyrillic@4.0.2/raleway.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsible.css">
 	</head>
 	<body>
-		<header class=page-header>
+		<header class="page-header">
 			<div class="container">
 				<div class="header-top">
-					<div class="heater-top-item">
-						<a class="btn-menu" href="#" title="Открыть меню">
-							<img src="img/menu-icon.png" alt="Menu" width="22" height="16">
-						</a>
-					</div>
-					<div class="heater-top-item">
-						<a class="profile" href="#" title="Войти в личный кабинет">
-							<span class="icon"></span><!--::before-->
-							<span class="title">Личный кабинет</span>
-							<span class="arrow"></span><!--::after-->
-						</a>
-					</div>
-					<div class="heater-top-item">
-						<a class="currency" href="#" title="Указать валюту">
-							<span class="icon"></span><!--::before-->
-							<span class="title">Рубли</span>
-							<span class="arrow"></span><!--::after-->
-						</a>
-					</div>
-					<div class="heater-top-item">
-						<a class="language" href="#" title="Указать язык">
-							<span class="icon"></span><!--::before-->
-							<span class="title">Ru</span>
-							<span class="arrow"></span><!--::after-->
-						</a>
-					</div>
-					<div class="heater-top-item">
-						<div class="contacts">
-							<b>8 800 500-61-05</b>
-							<br>
-							<span class="">Круглосуточная поддержка</span>
+					<a class="btn-menu" href="#" title="Открыть меню">
+						<img src="img/menu-icon.png" alt="Menu" width="22" height="16">
+					</a>
+					<nav class="header-nav">
+						<div class="header-top__item">
+							<a class="header-top__item-container" href="#" title="Войти в личный кабинет">
+								<span class="header-top__item-icon header-top__item-icon--profile"></span><!--::before-->
+								<span class="header-top__item-title">Личный кабинет</span>
+								<span class="header-top__item-arrow"></span><!--::after-->
+							</a>
 						</div>
-					</div>
+						<div class="header-top__item">
+							<a class="header-top__item-container" href="#" title="Указать валюту">
+								<span class="header-top__item-icon header-top__item-icon--currency"></span><!--::before-->
+								<span class="header-top__item-title">Рубли</span>
+								<span class="header-top__item-arrow"></span><!--::after-->
+							</a>
+						</div>
+						<div class="header-top__item">
+							<a class="header-top__item-container" href="#" title="Указать язык">
+								<span class="header-top__item-icon header-top__item-icon--language"></span><!--::before-->
+								<span class="header-top__item-title">Ru</span>
+								<span class="header-top__item-arrow"></span><!--::after-->
+							</a>
+						</div>
+						<div class="header-top__item">
+							<div class="header-top__item-container">
+								<b>8 800 500-61-05</b>
+								<br>
+								<small>Круглосуточная поддержка</small>
+							</div>
+						</div>
+						
+					</nav>
 				</div>
-				
-				<div class="promo">
+			</div>
+			<div class="promo">
+				<div class="container">
 					<img src="img/logo.png" alt="ООО &laquoГородские Круизы&raquo" width="88" height="88">
-					<h1>
-						<span class="promo-line-1">Морские прогулки</span>
+					<h1 class="promo__title">
+						<span>Морские прогулки</span>
 						<br>
-						<span class="promo-line-2">по Черному морю</span>
+						<small>по Черному морю</small>
 					</h1>
-					<a class="btn to-all-cruise" href="#catalog-of-cruises" title="Перейти к каталогу">Выбрать круиз</a>
+					<a class="btn btn-primary btn-lg promo-action" href="#catalog-of-cruises" title="Перейти к каталогу">Выбрать круиз</a>
 					<br>
 					<div class="line-dashed">
 						<!--CSS рисование пунктирной линии-->
 					</div>
 				</div>
-				
 			</div>
 		</header>
 		
@@ -74,59 +80,63 @@
 					<h2 class="title">Каталог круизов</h2>
 					<p class="sub-title">Сортировать круизы по <a><i>цене:</i><span class="arrow"></span></a></p>
 				</div>
-				<ul class="content-main cruise-list clearfix">
+				<ul class="catalog-list">
 					<li class="catalog-item">
-						<img src="img/item-1.jpg" alt="" width="555" height="436">
+						<img src="img/item-1.jpg" alt="" width="100%">
 						<div class="summary">
-							<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
-							<p>
-								<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
-								<br>
-								<b>Продолжительность:</b> 10 ч. 0 мин.
-								<br>
-								<b class="catalog-item-price">49 000 руб.</b>
-							</p>
+							<a href="#"><h3 class="catalog-item__title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+							<dl class="catalog-item__description">
+								<dt>Маршрут:</dt>
+								<dd>Сочи-Лазаревское-Геленджик</dd>
+								<dt>Продолжительность:</dt>
+								<dd>10 ч. 0 мин.</dd>
+							</dl>
+							<strong class="catalog-item__price">49 000 руб.</strong>
 						</div>
 					</li>
-					
-					
 					<li class="catalog-item">
-						<img src="img/item-1.jpg" alt="" width="555" height="436">
-						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
-						<p>
-							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
-							<br>
-							<b>Продолжительность:</b> 10 ч. 0 мин.
-							<br>
-							<b class="catalog-item-price">49 000 руб.</b>
-						</p>
+						<img src="img/item-1.jpg" alt="" width="100%">
+						<div class="summary">
+							<a href="#"><h3 class="catalog-item__title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+							<dl class="catalog-item__description">
+								<dt>Маршрут:</dt>
+								<dd>Сочи-Лазаревское-Геленджик</dd>
+								<dt>Продолжительность:</dt>
+								<dd>10 ч. 0 мин.</dd>
+							</dl>
+							<strong class="catalog-item__price">49 000 руб.</strong>
+						</div>
 					</li>
 					<li class="catalog-item">
-						<img src="img/item-1.jpg" alt="" width="555" height="436">
-						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
-						<p>
-							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
-							<br>
-							<b>Продолжительность:</b> 10 ч. 0 мин.
-							<br>
-							<b class="catalog-item-price">49 000 руб.</b>
-						</p>
+						<img src="img/item-1.jpg" alt="" width="100%">
+						<div class="summary">
+							<a href="#"><h3 class="catalog-item__title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+							<dl class="catalog-item__description">
+								<dt>Маршрут:</dt>
+								<dd>Сочи-Лазаревское-Геленджик</dd>
+								<dt>Продолжительность:</dt>
+								<dd>10 ч. 0 мин.</dd>
+							</dl>
+							<strong class="catalog-item__price">49 000 руб.</strong>
+						</div>
 					</li>
 					<li class="catalog-item">
-						<img src="img/item-1.jpg" alt="" width="555" height="436">
-						<a href="#"><h3 class="title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
-						<p>
-							<b>Маршрут:</b> Сочи-Лазаревское-Геленджик
-							<br>
-							<b>Продолжительность:</b> 10 ч. 0 мин.
-							<br>
-							<b class="catalog-item-price">49 000 руб.</b>
-						</p>
+						<img src="img/item-1.jpg" alt="" width="100%">
+						<div class="summary">
+							<a href="#"><h3 class="catalog-item__title">Морской круиз в Анапу</h3><span class="arrow"></span></a>
+							<dl class="catalog-item__description">
+								<dt>Маршрут:</dt>
+								<dd>Сочи-Лазаревское-Геленджик</dd>
+								<dt>Продолжительность:</dt>
+								<dd>10 ч. 0 мин.</dd>
+							</dl>
+							<strong class="catalog-item__price">49 000 руб.</strong>
+						</div>
 					</li>
 				</ul>
 				
-				<div class="content-footer">
-					<a class="btn view-more" href="#">Больше круизов<span class="arrow"></span></a>
+				<div class="load-more">
+					<a class="btn btn-lg btn-primary" href="#">Больше круизов<span class="arrow"></span></a>
 				</div>
 			</div>
 		</main>
@@ -135,21 +145,21 @@
 		<footer class="page-footer">
 			<div class="container">
 				<div class="footer">
-					<div class="footer-menu">
+					<div class="footer-menu footer-col">
 						<ul>
 							<li><a href="#">Вход для партнеров</a></li>
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="footer-social">
-						<span class="title">Будь на связи:</span>
+					<div class="footer-social footer-col">
+						<span class="footer-social__title">Будь на связи:</span>
 						<a class="social-btn social-btn-vk" href="https://vk.com"></a>
 						<a class="social-btn social-btn-ok" href="https://facebook.com"></a>
 						<a class="social-btn social-btn-ut" href="https://facebook.com"></a>
 						<a class="social-btn social-btn-in" href="https://instagram.com"></a>
 					</div>
-					<div class="footer-contacts">
+					<div class="footer-contacts footer-col">
 						<div class="contacts">
 							<b>8 800 500-61-05</b>
 							<br>
