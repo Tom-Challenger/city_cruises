@@ -65,7 +65,6 @@ body {
 	font-size: 14px;
 }
 
-
 a {
 	text-decoration: none;
 }
@@ -114,7 +113,7 @@ a.header-top__item-container:hover {
 
 .promo {
 	text-align: center;
-	margin-top: -106px;
+	margin-top: -190px;
 	background-image: url("../img/header-bg.jpg");
 	background-size: cover;
 	background-position: center;
@@ -124,6 +123,8 @@ a.header-top__item-container:hover {
 }
 
 .promo img {
+	position: relative;
+	top: 50px;
 	display: inline-block;
 	width: 88px;
 	height: 88px;
@@ -189,14 +190,6 @@ a.header-top__item-container:hover {
 	background-position: center;
 }
 
-/*
-DELETE
-*/
-
-.title {
-	display: inline-block;
-}
-
 .contacts b {
 	font-family: 'Maven Pro', sans-serif;
 	font-weight: bold;
@@ -215,14 +208,12 @@ DELETE
 	text-transform: none;
 }
 
-
-/* ------------------------------- */
-
 main .content-header {
 	text-align: center;
 }
 
 .content-header .title{
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	
@@ -305,6 +296,7 @@ main .content-header {
 
 .catalog-item__description {
 	font-size: 14px;
+	margin-bottom: 10px;
 }
 
 .catalog-item__description dt {
@@ -317,7 +309,7 @@ main .content-header {
 }
 
 .load-more {
-	padding: 60px;
+	padding: 30px 60px 60px 60px;
 	text-align: center;
 }
 
