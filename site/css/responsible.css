@@ -12,6 +12,10 @@
     font-size: 40px;
   }
 
+  .promo img {
+    position: inherit;
+  }
+
   .footer {
     display: block;
   }
